@@ -36,7 +36,7 @@ const Cart = () => {
                                 </div>
                             </div>
                             <div className="remove-btn">
-                            <i className="bi bi-archive-fill" style={{color:"red",cursor:"pointer"}} onClick={()=>{removeOneItem(val)}}></i>
+                                <i className="bi bi-archive-fill" style={{color:"red",cursor:"pointer"}} onClick={()=>{removeOneItem(val)}}></i>
                             </div>
                         </div>
                         <hr />
