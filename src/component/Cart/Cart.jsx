@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { clearCart, removeItem } from "../../Store/Slices/CartSlice";
 
 const Cart = () => {
-    const {items}  = useSelector((state) => state.cart);
+    const data  = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
     const removeOneItem = (payload) => {
@@ -19,7 +19,7 @@ const Cart = () => {
     <div className="container text-center mt-3">
         <h2>Your Shopping Cart</h2>
         <div className="parent-cart" >
-            {items.length > 0 ? items.map((val)=>{
+            {data.items.length > 0 ? data.items.map((val)=>{
                 return(
                     <div key={val.uid}>
                         <div className="inner-cart p-2" >
@@ -44,7 +44,7 @@ const Cart = () => {
                 )
             }):<p>Cart is Empty</p>}
         </div>
-        {items.length > 0 ? 
+        {data.items.length > 0 ? 
             <button className="btn btn-danger mt-2" onClick={()=>{
                 emptyCart();
             }}>Empty cart</button>:
