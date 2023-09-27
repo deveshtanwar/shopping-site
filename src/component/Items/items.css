@@ -66,6 +66,12 @@
         width: 150px;
     }
 
+    .item-desc{
+        height: 50px;
+    }
+    .item-name{
+        height: 50px;
+    }
     .mobile-img{
         width: 150px;
         height: 150px;
