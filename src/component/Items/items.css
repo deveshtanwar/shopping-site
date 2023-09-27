@@ -1,0 +1,73 @@
+.card-row{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px lightgray;
+    background-color: white;
+}
+
+.card-row{
+    transition: box-shadow 0.5s;
+}
+
+.card-row:hover{
+    box-shadow: 0 4px 8px 0 rgba(2, 48, 255, 0.403), 0 6px 20px 0 rgba(2, 48, 255, 0.369);
+    cursor: pointer;
+}
+
+.mobile-img{
+    width: 200px;
+    height: 200px;
+}
+
+.card-detail{
+    padding: 5px;
+    text-align: center;
+}
+
+.item-name{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-desc{
+    font-size: 14px;
+    color: rgb(103, 103, 103);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.item-price{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.buy-button{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-buy-btn{
+    width: 200px;
+    padding: 1px 3px;
+    border: none;
+    font-size: 12px;
+    background-color: crimson;
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:400px) {
+    .card-row{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .mobile-img{
+        width: 150px;
+        height: 150px;
+    }
+}

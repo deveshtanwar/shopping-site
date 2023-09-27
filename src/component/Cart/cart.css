@@ -1,0 +1,18 @@
+.parent-cart{
+    height: 380px;
+    overflow: scroll;
+}
+.parent-cart::-webkit-scrollbar{
+    display: none;
+}
+
+.inner-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items{
+    display: flex;
+    gap: 15px;
+}

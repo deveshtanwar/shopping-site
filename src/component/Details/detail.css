@@ -1,0 +1,60 @@
+.detailView{
+    display: flex;
+    padding: 15px;
+}
+
+.prodDetail{
+    padding: 5px 25px;
+}
+
+.detail-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.selector-btn > ul >li{
+    list-style-type: none;
+}
+
+.selector-btn > ul > li >a{
+    text-decoration: none;
+}
+
+.radio-btn{
+    border: 1px dashed gray;
+    padding: 5px;
+}
+
+.actions{
+    gap: 50px;
+    align-items: center;
+}
+
+.alert{
+    display: none;
+}
+
+.alert-visible{
+    display: block;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 400px){
+    .detailView{
+        flex-direction: column;
+    }
+    .detail-img{
+        width: 350px;
+        height: 350px;
+    }
+    .detail-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .prodDetail{
+        margin-top: 10px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,50 @@
+.header{
+    color: white;
+}
+
+.brand-name{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.brand-name{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.e{
+    font-weight: 700;
+    color: yellow;
+    font-family:sans-serif;
+}
+
+.cart-link{
+    color: white;
+    text-decoration: none;
+}
+
+.cart-redux{
+    color: yellow;
+    font-weight: 700;
+}
