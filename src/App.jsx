@@ -6,7 +6,7 @@ import Cart from "./component/Cart/Cart";
 
 const App = () =>{
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="/shopping-site">
       <Header />
       <Routes>
         <Route path="/" exact element={<ProductList />} />
