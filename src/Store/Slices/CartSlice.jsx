@@ -8,7 +8,12 @@ const cartSlice = createSlice({
     },
     reducers: {
         addItem(state, action) {
-            let find = state.items.findIndex((item) => item.id == action.payload.id)
+            var find = -1;
+            for(let i = 0; i<state.items.length; i++){
+                if(state.items[i].id == action.payload.id && state.items[i].color == action.payload.color && state.items[i].storage == action.payload.storage){
+                    find = i;
+                }
+            }
             if(find >= 0){
                 if(state.items[find].color == action.payload.color && state.items[find].storage == action.payload.storage){
                     state.items[find].quantity += 1;
