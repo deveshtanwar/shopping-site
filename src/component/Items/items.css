@@ -63,7 +63,7 @@
     .card-row{
         display: flex;
         flex-direction: column;
-        width: 151px;
+        width: 155px;
     }
 
     .item-desc{
