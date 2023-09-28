@@ -5,7 +5,9 @@ const Items = (props) => {
   return (
     <div className='items-card'>
         <div className='card-row mb-3'>
-          <img src={image} className='mobile-img'/>
+          <div className='product-image'>
+            <img src={image} className='mobile-img'/>
+          </div>
           <div className='card-detail'>
             <p className='item-name'>{title.slice(0,15)}</p>
             <p className='item-desc'>{description.toLowerCase().slice(0,40)}...</p>

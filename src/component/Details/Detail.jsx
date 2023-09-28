@@ -61,7 +61,7 @@ const Detail = (props) => {
             <div className='my-2'>
               <small style={{color:"gray", fontWeight:"500", fontSize:"16px"}}>Color</small><br />
                 <div className='d-flex'>
-                  <div className='radio-btn me-2'>
+                  <div className='radio-btn me-2 d-flex align-items-center'>
                     <label htmlFor="option1" className='mx-2'>Black</label>
                     <input type="radio" value="black" id="option1" name='color' onClick={handleColorChange}/>
                   </div>
