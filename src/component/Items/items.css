@@ -42,6 +42,9 @@
     font-size: 14px;
     color: rgb(103, 103, 103);
     font-family: 'Times New Roman', Times, serif;
+    height: 80px;
+    margin: 0px;
+    text-align: center;
 }
 
 .item-price{
@@ -72,13 +75,6 @@
         display: flex;
         flex-direction: column;
         width: 155px;
-    }
-
-    .item-desc{
-        height: 50px;
-    }
-    .item-name{
-        height: 50px;
     }
     .mobile-img{
         width: 120px;
